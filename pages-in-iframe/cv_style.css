@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    padding: 0px 40px;
+    background-color: #f7f7f7;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* --------------- Progammer icon, Hello sentence -------------- */
+
+.container div:first-child{
+    min-width: 50%;
+}
+.container div:last-child{
+    min-width: 50%;
+}
+#img_coder{
+    height: 100px;
+    transform: translateX(25%);
+}
+h3 span{
+       color: #5de5a7;
+       margin-left: 10px;
+}
+h3 #span_hello{
+    color: white;
+    margin-left: 46px;
+    background-color: #5de5a7;
+    border-radius: 10px;
+    padding: 2px 20px 4px 20px;
+}
+
+
+/* ----------- titles: name & job ------------- */
+
+h2{
+    color: #7a7a7a;
+    margin-bottom: 20px;
+}
+/* ------------------- info list ---------------- */
+
+ul{
+    list-style-type: none;
+}
+ul li{
+    margin-bottom: 8px;
+}
+ul li img{
+    width: 24px;
+    margin-right: 10px;
+}
+
+/* ------------ filler img ------------ */
+
+#img_filler{ 
+    width: 100%;
+}

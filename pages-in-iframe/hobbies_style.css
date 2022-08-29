@@ -1,0 +1,81 @@
+    body{
+    padding: 40px 0px 0px;
+    font-family: "fira-sans-2", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+    overflow-y: hidden;
+    }
+    
+/* -------------- hobbies ----------------- */
+img{
+    width: 100px;
+    margin: 10px;
+    transition-duration: .5s;
+    filter: grayscale(100);
+}
+img:hover{
+    width: 150px;
+    transition-duration: .5s;
+    /* transform: rotate(45deg); */
+    filter: grayscale(0);
+    animation-fill-mode: forwards;
+}
+img:active{
+    filter: brightness(90%);    
+}
+
+
+/* ------------- desc --------------- */
+
+.desc {
+    margin-top: 100px;
+}
+
+.desc::after {
+font-size: 40px;
+padding: 20px 0px;
+font-weight: bolder;
+content: " "; /* this is a must */
+min-height: 70px;
+min-width: 100vh;
+background-color: f7f7f7;
+border-radius: 10px;
+box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+display: block;
+color: #7a7a7a;
+text-align: center;
+transition: color 0.1s ease;
+}
+
+
+/* ------------- desc change based on selection --------------- */
+
+img:nth-child(1):hover ~.desc::after{
+    content: "Digital Art";
+    padding: 20px 0px;
+    font-weight: bolder;
+    transition-duration: .5s;
+}
+img:nth-child(2):hover ~.desc::after{
+    content: "Basketball";
+    padding: 20px 0px;
+    font-weight: bolder;
+}
+img:nth-child(3):hover ~.desc::after{
+    content: "Football";
+    padding: 20px 0px;
+    font-weight: bolder;
+}
+img:nth-child(4):hover ~.desc::after{
+    content: "Reading";
+    padding: 20px 0px;
+    font-weight: bolder;
+}
+img:nth-child(5):hover ~.desc::after{
+    content: "Chess";
+    padding: 20px 0px;
+    font-weight: bolder;
+}

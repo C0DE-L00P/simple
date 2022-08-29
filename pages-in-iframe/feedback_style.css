@@ -1,0 +1,130 @@
+*{
+    text-align: center;
+}
+body{
+    background-color: #f7f7f7;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, 'Arial Narrow', Arial, sans-serif;
+}
+
+/* ------------------------- form ------------------------- */
+
+form{
+    background-image: url(../Resources/wish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    height: 60%;
+    animation: hide 10.3s forwards;
+}
+label{
+    font-size: 40px;
+    color: #7a7a7a;
+    opacity: 0;
+    visibility: hidden;
+    animation: show 10.3s forwards;
+}
+textarea{
+    width: 70%;
+    height: 40vh;
+    padding: 10px;
+    font-size: 20px;
+    border-color: #c4c4c4;
+    border-radius: 10.3px;
+    
+    opacity: 0;
+    visibility: hidden;
+    animation: show 10.3s forwards;
+}
+form input{
+    margin-top: 20px;
+    padding: 10px 40px;
+    background-color: #5de5a7;
+    border-radius: 10px;
+    border-color: #00000000;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15), -6px -6px 10px -1px rgba(255,255,255,0.7);
+    animation: show 10.3s forwards;
+}
+form input:active{
+    background-color: #48b483;
+}
+
+
+/* ------------- loading ----------------- */
+
+#loading_bar::after{
+    content: "";
+    animation: loading 3s linear ;
+    text-align: center;
+    font-size: 50px;
+    color: #c4c4c4;
+}
+
+
+/* ----------------- Animations -------------------- */
+
+@keyframes show{
+    0%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+        opacity: 0;
+    }
+    60%{
+        opacity: 20;
+        visibility: visible;
+    }
+    70%{
+        opacity: 40;
+        visibility: visible;
+    }
+    80%{
+        opacity: 60;
+        visibility: visible;
+    }
+    90%{
+        opacity: 80;
+        visibility: visible;
+    }
+    100%{
+        opacity: 100;
+        visibility: visible;
+    }
+}
+
+@keyframes hide {
+    0% {
+        background-position: 50%;
+    }
+    50%{
+        background-position: 50%;
+    }
+    100%{
+        background-position: 50%;
+        background: none;
+    }
+}
+
+@keyframes loading {
+    20% {
+      content: ".";
+    }
+    40% {
+      content: "..";
+    }
+    60% {
+      content: "...";
+    }
+    80% {
+      content: "....";
+    }
+    100% {
+      content: ".....";
+    }
+  }

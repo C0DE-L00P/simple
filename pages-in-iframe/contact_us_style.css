@@ -1,0 +1,31 @@
+html, body{
+    display:grid;
+    height:100%;
+    text-align: center;
+    place-items: center;
+    background-color: #f7f7f7;
+    overflow-y: hidden;
+  }
+  
+  .img-personal{
+      border-radius: 50%;
+      width: 200px;
+      height: 240px;
+      clip: auto;
+      display: block;
+      cursor: none;
+  }
+
+  /* ------------- links --------------- */
+
+  img{
+      display: inline;
+      width: 60px;
+      margin-right: 20px;
+      cursor: pointer;
+  }
+  img:active{
+      width: 50px;
+      padding: 5px;
+      filter: opacity(80);
+  }
